@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Javascript | Variables, Arrays & Objects</title>
+</head>
+
+<body>
+<div id="test"></div>
+	<script>
+		//OUTPUT
+		//console.log('Hello World!');
+		//document.write('Hello world');
+		//window.alert('Hello world!');
+		document.getElementById('test').innerHTML = 'Hello world';
+
+		//VARIABLES
+		var x = 5;
+		var y = 10;
+		//console.log(x+y);
+		var person = 'John Doe'
+		//console.log('My name is '+person);
+		var a = 1, b = 2, c = 3;
+		//console.log(b);
+
+		//ARRAYS
+		var animals = ['Dog', 'Cat', 'Horse'];
+		//var animals = new Array('Dog','Cat', 'Horse');
+		//console.log(animals);
+		//console.log(animals[1]);
+
+		animals[3] = 'Cow';
+
+		animals.push('Pig');
+
+		//console.log(animals.length);
+		//console.log(animals.sort());
+
+		var person = new Array();
+		person['name'] = 'John Doe';
+		person['age'] = 35;
+		person['city'] = 'New York';
+
+		//console.log(person);
+
+		//OBJECTS
+
+		var car = {make:'Ford', model:'Mustang', year:1964};
+		//console.log(car);
+		//console.log(car.make);
+
+		//ARRAY OBJECTS
+
+		var cars = [
+			{
+				make:'Ford',
+				model:'Mustang',
+				year:1964
+			},
+			{
+				make:'Chevy',
+				model:'Impala',
+				year:1974
+			},
+			{
+				make:'Toyota',
+				model:'Carvy',
+				year:1978
+			}
+		];
+
+		//console.log(cars);
+		//console.log(cars[1]);
+		console.log(cars[1].model);
+	</script>
+	
+</body>
+
+</html>
